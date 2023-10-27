@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potion of Slowness</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>       
+        <h1>Potion of Slowness</h1>
+    </header>
+    <button id="goBackButton">Go Back</button>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p>Potion of Slowness is a type of potion that, when consumed or thrown as a Splash Potion, will slow down the movement speed of the player or entity it affects. This potion is often used in various in-game scenarios, such as in combat or in certain redstone contraptions, to hinder the movement of mobs or other players.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>To make Extended Potion of Slowness, You will need:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/water-bottle.webp" alt="water bottle">
+                    <p>Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-mundane-details')">Read more</button>
+                    <p id="water-bottle-mundane-details" class="hidden">You will need empty glass bottles, which you can obtain by right-clicking on a water source or by using glass bottles in your crafting grid.</p>
+                </li>
+            
+                <li>
+                    <img src="img/Fermented_Spider_Eye.webp" alt="Fermented Spider Eye">
+                    <p>Fermented Spider Eye</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Fermented-Spider-Eye-details')">Read more</button>
+                    <p id="Fermented-Spider-Eye-details" class="hidden">Sugar is used to create a Potion of Swiftness.</p>
+                </li>
+                <li>
+                    <img src="img/nether-wart.webp" alt="Nether Wart">
+                    <p>Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('netherwart-details')">Read more</button>
+                    <p id="netherwart-details" class="hidden">Nether Wart is a plant that can be found in the Nether dimension. You'll need to gather Nether Wart, which can be farmed in the Overworld with soul sand, or you can find it in Nether Fortresses in the Nether dimension.</p>
+                </li>
+                <li>
+                    <img src="img/Blaze_Powder.webp" alt="blaze powder">
+                    <p>Blaze Powder</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('blaze-powder-details')">Read more</button>
+                    <p id="blaze-powder-details" class="hidden">Blaze Powder is used as a fuel for the brewing stand. You'll need one Blaze Powder for every brewing session. You can obtain Blaze Powder by crafting Blaze Rods in your crafting table.</p>
+                </li>
+                <li>
+                    <img src="img/access-brew-stand.webp" alt="Brewing Stand">
+                    <p>Brewing Stand</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-stand-details')">Read more</button>
+                    <p id="brew-stand-details" class="hidden"> You'll need a Brewing Stand to create and modify potions.</p>
+                </li>
+            </ul>
+            
+            <h2>Steps</h2>
+            <p>Follow the Following Steps to Make Extended Potion of Slowness:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/obtain-blaze-powder.jpg" alt="Obtain Blaze Powder">
+                    <p>Obtain Blaze Powder</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('obtain-blaze-powder-details')">Read more</button>
+                    <p id="obtain-blaze-powder-details" class="hidden">Travel to the Nether and defeat Blazes to obtain Blaze Rods.
+                        <br>Craft Blaze Rods into Blaze Powder by placing them in the crafting grid.</p>
+                </li>
+                <li>
+                    <img src="img/create-water-bottle.png" alt="Create Water Bottle">
+                    <p>Create Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('create-water-bottle-details')">Read more</button>
+                    <p id="create-water-bottle-details" class="hidden">To make water bottles, right-click on a water source (like a river or lake) with your empty glass bottles.</p>
+                </li>
+                <li>
+                    <img src="img/Potion_of_Slowness.webp" alt="Create potion of slowness">
+                    <p>Create potion of Slowness</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('create-potion-of-slowness-details')">Read more</button>
+                    <p id="create-potion-of-slowness-details" class="hidden">Place the Blaze Powder in one of the brewing stand's fuel slots.
+                        <br>Put the Water Bottles in the brewing stand, and they will turn into Awkward Potions.
+                        <br>Add Nether Wart to the brewing stand to create a base Potion.</p>
+                </li>
+                <!--continue here-->
+                <li>
+                    <img src="img/Fermented_Spider_Eye.webp" alt="Modify with Fermented Spider Eye">
+                    <p>Modify with Fermented Spider Eye</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('modify-with-fermented-spider-eye-details')">Read more</button>
+                    <p id="modify-with-fermented-spider-eye-details" class="hidden">Once you have the base Potion, add a Fermented Spider Eye to the brewing stand. This will create a Potion of Slowness.</p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="Modify with Redstone">
+                    <p>Modify with Redstone</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('modify-with-redstone-details')">Read more</button>
+                    <p id="modify-with-redstone-details" class="hidden">To make an Extended Potion of Slowness, you will need to add Redstone Dust to the brewing stand after creating the standard Potion of Slowness. This will extend the potion's duration.</p>
+                </li>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+            
+        </section>
+    </main>
+     
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+    <!--for goback button-->
+    <script>
+        document.getElementById('goBackButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+
+       <style>
+        .hidden {
+            display: none;
+        }
+
+        .minecraft-button {
+            background-color: #9c9c9c;
+            border: 1px solid #000;
+            color: #fff;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap">
+    <script>
+        function toggleReadMore(elementId) {
+            var x = document.getElementById(elementId);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

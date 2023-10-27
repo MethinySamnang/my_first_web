@@ -1,0 +1,194 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/minecraft-b5.jpg"); /* Use 1920x1080 resolution pic which fit the whole webpage */
+    background-size: cover; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Add this line to fix the background image */
+    color: #fff;
+    margin: 0;
+    
+}
+
+
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+  
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Consolas;
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: Consolas;
+    margin: 10px 0;
+    background-color:#333;
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    flex: 1; /* Allow the main content to expand and fill available space */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#goBackButton {
+    position: fixed; /* Set the button's position to fixed */
+    color: #00ff00; /* Green text color */
+    font-size: 28px; /* Larger font size */
+    margin-top: 20px;
+    text-transform: uppercase; /* Uppercase the text */
+    letter-spacing: 2px; /* Increase letter spacing */
+    background-color: #000; /* Add a background color */
+    padding: 10px 20px; /* Add padding to increase size */
+    border-radius: 10px; /* Round the corners */
+}
+button{
+    margin-top: 20px;
+    text-transform: uppercase; /* Uppercase the text */
+    letter-spacing: 2px; /* Increase letter spacing */
+    padding: 10px 20px; /* Add padding to increase size */
+    border-radius: 10px; /* Round the corners */
+}
+
+h2 {
+    color: #00ff00; /* Green text color */
+    font-size: 36px; /* Larger font size */
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase; /* Uppercase the text */
+    letter-spacing: 2px; /* Increase letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    background-color: #000; /* Add a background color */
+    padding: 10px 20px; /* Add padding to increase size */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for depth */
+    font-family: Consolas;
+}
+/*for weakness potion*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the container take up the full viewport height */
+}
+
+ul, ol {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul li:before {
+    
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #00ff00;
+}
+
+a:hover {
+    text-decoration: none;
+    display:block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add custom styles for images, toggle buttons, and more as needed */
+
+/* Example for hiding and showing potion details */
+.potion-details {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Style for potion boxes */
+ul.potion-list {
+    list-style-type: none !important; /* Remove list-style (bullets) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul.potion-list li {
+    margin: 50px;
+    padding: 50px;
+    background-color: #333;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul.potion-list img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+ul.potion-list p {
+    color: #00ff00;
+    margin-top: 5px;
+}
+
+/* Style for potion-ingredient page*/
+ul.PotionIngridient-list {
+    list-style-type: none !important; /* Remove list-style (bullets) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul.PotionIngridient-list li {
+    margin: 50px;
+    padding: 50px;
+    background-color: #333;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul.PotionIngridient-list img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+ul.PotionIngridient-list p {
+    color: #00ff00;
+    margin-top: 5px;
+}
+
+
+
+ 
+

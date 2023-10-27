@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potion of Strength</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>       
+        <h1>Potion of Strength</h1>
+    </header>
+    <button id="goBackButton">Go Back</button>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p>  Potion of Strength is a type of potion that, when consumed, grants the player the Strength status effect. The Strength effect increases the player's melee attack damage, allowing them to deal more damage with weapons like swords, axes, and fists.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>To make Extended Potion of Strength, You will need:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/water-bottle.webp" alt="water bottle">
+                    <p>Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-mundane-details')">Read more</button>
+                    <p id="water-bottle-mundane-details" class="hidden">You will need empty glass bottles, which you can obtain by right-clicking on a water source or by using glass bottles in your crafting grid.</p>
+                </li>
+                <li>
+                    <img src="img/nether-wart.webp" alt="Nether Wart">
+                    <p>Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('netherwart-details')">Read more</button>
+                    <p id="netherwart-details" class="hidden">Nether Wart is a plant that grows in the Nether. You'll need at least one Nether Wart for the brewing process.</p>
+                </li>
+                <li>
+                    <img src="img/Fermented_Spider_Eye.webp" alt="Fermented Spider Eye">
+                    <p>Fermented Spider Eye</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Fermented-Spider-Eye-details')">Read more</button>
+                    <p id="Fermented-Spider-Eye-details" class="hidden">This is the main ingredient to transform an Awkward Potion into a Potion of Weakness, which is the first step in brewing a Potion of Strength.
+
+                    </p>
+                </li>
+                <li>
+                    <img src="img/Glowstone_Dust.webp" alt="Glowstone Dust">
+                    <p>Glowstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Glowstone-Dust-details')">Read more</button>
+                    <p id="Glowstone-Dust-details" class="hidden"> This is used to enhance the Potion of Strength into a Potion of Strength II, which is stronger but has a shorter duration.
+
+                    </p>
+                </li>
+                <li>
+                    <img src="img/Blaze_Powder.webp" alt="blaze powder">
+                    <p>Blaze Powder</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('blaze-powder-details')">Read more</button>
+                    <p id="blaze-powder-details" class="hidden">Blaze Powder is used as fuel for the Brewing Stand.</p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="redstone dust">
+                    <p>Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('redstone-dust-details')">Read more</button>
+                    <p id="redstone-dust-details" class="hidden"> This is used to extend the duration of your potion.</p>
+                </li>
+                <li>
+                    <img src="img/access-brew-stand.webp" alt="Brewing Stand">
+                    <p>Brewing Stand</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-stand-details')">Read more</button>
+                    <p id="brew-stand-details" class="hidden"> You'll need a Brewing Stand to create and modify potions.</p>
+                </li>
+            </ul>
+
+            <!--STEPS-->
+            <h2>Steps</h2>
+            <p>Follow the Following Steps to Make Extended Potion of Strength:</p>
+            <ul class="PotionIngridient-list">
+               
+                <li>
+                    <img src="img/awkward-potion.png" alt="Awkward Potion">
+                    <p>Create Awkward Potion</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Awkward-Potion-details')">Read more</button>
+                    <p id="Awkward-Potion-details" class="hidden"> -Start by placing Blaze Powder in the fuel slot of a Brewing Stand to activate it.
+                        <br>-Add Water Bottles to the three bottle slots in the Brewing Stand to create Awkward Potions.
+                        <br>-Place Nether Wart in the top slot of the Brewing Stand to create an Awkward Potion.</p>
+                </li>
+                <li>
+                    <img src="img/Potion_of_Weakness.webp" alt="Create Potion of Weakness">
+                    <p>Create Potion of Weakness</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Create-Potion-of-Weakness-details')">Read more</button>
+                    <p id="Create-Potion-of-Weakness-details" class="hidden">-Add Blaze Powder to the Brewing Stand again.
+                        <br>-Put Fermented Spider Eye in the top slot. This will transform the Awkward Potion into a Potion of Weakness.</p>
+                </li>
+                <li>
+                    <img src="img/potion_of_strength.gif" alt="Create Potion of Strength">
+                    <p>Create Potion of Strength</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Create-Potion-of-Strength-details')">Read more</button>
+                    <p id="Create-Potion-of-Strength-details" class="hidden">-Finally, add Blaze Powder to the Brewing Stand.
+                        <br>-Place a Potion of Weakness in the top slot. This will create a Potion of Strength
+                    </p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="add redstone dust">
+                    <p>Add Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('add-modification-details')">Read more</button>
+                    <p id="add-modification-details" class="hidden">To make it an Extended Potion of Strength, add Redstone Dust to the Brewing Stand while the Potion of Strength is in it. This will extend the duration of the potion.</p>
+                </li>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+            
+        </section>
+    </main>
+     
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+    <!--for goback button-->
+    <script>
+        document.getElementById('goBackButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+
+       <style>
+        .hidden {
+            display: none;
+        }
+
+        .minecraft-button {
+            background-color: #9c9c9c;
+            border: 1px solid #000;
+            color: #fff;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap">
+    <script>
+        function toggleReadMore(elementId) {
+            var x = document.getElementById(elementId);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

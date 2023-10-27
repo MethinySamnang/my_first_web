@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awkward Potion</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Awkward Potion</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p>Awkward Potion is the base for most other potions. It can be used as a base to create various effects when combined with additional ingredients.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>To make Awkward Potion, You will need:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/water-bottle.webp" alt="water bottle">
+                    <p>Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-details')">Read more</button>
+                    <p id="water-bottle-details" class="hidden">You will need empty glass bottles, which you can obtain by right-clicking on a water source or by using glass bottles in your crafting grid.</p>
+                </li>
+                <li>
+                    <img src="img/nether-wart.webp" alt="Nether Wart">
+                    <p>Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('netherwart-details')">Read more</button>
+                    <p id="netherwart-details" class="hidden">Nether Wart is a plant that can be found in the Nether dimension. You'll need to gather Nether Wart, which can be farmed in the Overworld with soul sand, or you can find it in Nether Fortresses in the Nether dimension.</p>
+                </li>
+            </ul>
+            
+            <h2>Steps</h2>
+            <p>Follow the Following Steps to Make Awkward Potion:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/gather-nether-wart.png" alt="Gather Nether Wart">
+                    <p>Gather Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('nether-wart-gather-details')">Read more</button>
+                    <p id="nether-wart-gather-details" class="hidden">Find and collect Nether Wart from Nether Fortresses in the Nether or farm it using soul sand in the Overworld. To break Nether Wart, just right-click on it when you have an empty hand.</p>
+                </li>
+                <li>
+                    <img src="img/create-water-bottle.png" alt="Create Water Bottle">
+                    <p>Create Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-create-details')">Read more</button>
+                    <p id="water-bottle-create-details" class="hidden">To make water bottles, right-click on a water source (like a river or lake) with your empty glass bottles.</p>
+                </li>
+                <li>
+                    <img src="img/access-brew-stand.webp" alt="Access a Brewing Stand">
+                    <p>Access a Brewing Stand</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-stand-details')">Read more</button>
+                    <p id="brew-stand-details" class="hidden">Place your brewing stand down somewhere in your world. You can craft a brewing stand using a blaze rod and three cobblestones. Then, right-click on the brewing stand to open its interface.</p>
+                </li>
+                <li>
+                    <img src="img/brew-awkward-potion.webp" alt="Brew the Awkward Potion">
+                    <p>Brew the Awkward Potion</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-potion-details')">Read more</button>
+                    <p id="brew-potion-details" class="hidden">- Put the water bottles in the brewing stand's ingredient slots.<br>- Add the Nether Wart as the brewing ingredient.<br>- Wait for the brewing process to complete.</p>
+                </li>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+
+    <!--script for the potion columne-->
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+
+       <style>
+        .hidden {
+            display: none;
+        }
+
+        .minecraft-button {
+            background-color: #9c9c9c;
+            border: 1px solid #000;
+            color: #fff;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap">
+    <!--script for read more button-->
+    <script>
+        function toggleReadMore(elementId) {
+            var x = document.getElementById(elementId);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+      
+</body>
+</html>

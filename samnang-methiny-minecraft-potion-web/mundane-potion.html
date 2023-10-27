@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mundane Potion</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mundane Potion</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p>Mundane Potion is a type of potion that serves as a base or starting point for creating other, more powerful potions with various effects. The Mundane Potion itself doesn't have any specific effects or benefits when consumed, and it's considered a relatively weak potion.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>To make Mundane Potion, You will need:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/water-bottle.webp" alt="water bottle">
+                    <p>Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-mundane-details')">Read more</button>
+                    <p id="water-bottle-mundane-details" class="hidden">You will need empty glass bottles, which you can obtain by right-clicking on a water source or by using glass bottles in your crafting grid.</p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="redstone dust">
+                    <p>Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('redstone-dust-details')">Read more</button>
+                    <p id="redstone-dust-details" class="hidden">Redstone Dust is the ingredient used to create a Mundane Potion.</p>
+                </li>
+            </ul>
+            
+            <h2>Steps</h2>
+            <p>Follow the Following Steps to Make Mundane Potion:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/gather-redstone-dust.png" alt="Gather Redstone Dust">
+                    <p>Gather Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('gather-redstone-dust-details')">Read more</button>
+                    <p id="gather-redstone-dust-details" class="hidden">You can obtain Redstone Dust by mining Redstone Ore found deep underground in Minecraft.</p>
+                </li>
+                <li>
+                    <img src="img/create-water-bottle.png" alt="Create Water Bottle">
+                    <p>Create Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('create-water-bottle-details')">Read more</button>
+                    <p id="create-water-bottle-details" class="hidden">To make water bottles, right-click on a water source (like a river or lake) with your empty glass bottles.</p>
+                </li>
+                <li>
+                    <img src="img/access-brew-stand.webp" alt="Access a Brewing Stand">
+                    <p>Access a Brewing Stand</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('access-brew-stand-details')">Read more</button>
+                    <p id="access-brew-stand-details" class="hidden">Place your brewing stand down somewhere in your world. You can craft a brewing stand using a blaze rod and three cobblestones. Then, right-click on the brewing stand to open its interface.</p>
+                </li>
+                <li>
+                    <img src="img/brew-mundane-potion.png" alt="Brew the Mundane Potion">
+                    <p>Brew the Mundane Potion</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-mundane-potion-details')">Read more</button>
+                    <p id="brew-mundane-potion-details" class="hidden">- Place the water bottles in the brewing stand's ingredient slots.<br>- Add Redstone Dust as the brewing ingredient.</p>
+                </li>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+
+       <style>
+        .hidden {
+            display: none;
+        }
+
+        .minecraft-button {
+            background-color: #9c9c9c;
+            border: 1px solid #000;
+            color: #fff;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap">
+    <script>
+        function toggleReadMore(elementId) {
+            var x = document.getElementById(elementId);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

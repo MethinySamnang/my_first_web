@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Potion Brewing Guide</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minecraft Potion Brewing Guide</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Main Potions</h2>
+            <p>-There are 5 main Potions in Minecraft:</p>
+            <ul class="potion-list">
+                <a target="_blank" href="awkward-potion.html"> <!--put li in a to make the whole thing clickable-->
+                    <li>
+                        <img src="img/awkward-potion.png" width="80" height="90" alt="Awkward Potion">
+                        <p>Awkward Potion</p>
+                    </li>
+                </a>
+                <a target="_blank" href="mundane-potion.html">
+                    <li>
+                        <img src="img/mundane-potion.webp" alt="Mundane Potion">
+                        <p>Mundane Potion</p>
+                    </li>
+                </a>
+                <li>
+                    <a target="_blank" href="extended-potion.html">
+                        <img src="img/extended-Potion.webp" alt="Extended Potion">
+                        <p>Extended Potion</p>
+                    </a>
+                </li>
+                <a target="_blank" href="thick-potion.html">
+                    <li>
+                        <img src="img/thick-potion.webp" alt="Thick Potion">
+                        <p>Thick Potion</p>
+                    </li>
+                </a>
+                <a target="_blank" href="weakness-potion.html">
+                    <li>
+                        <img src="img/Weakness-Potion.webp" alt="Weakness Potion">
+                        <p>Weakness Potion</p>
+                    </li>
+                </a>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+</body>
+</html>
+
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>

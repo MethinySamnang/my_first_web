@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weakness Potion</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Weakness Potion</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p>In Minecraft, there are two types of potions related to the "Weakness" effect:</p>
+            <ul class="potion-list">
+                <a  href="standard-weakness.html"> <!--put li in a to make the whole thing clickable-->
+                    <li>
+                        <img src="img/Potion_of_Weakness.webp" width="80" height="90" alt="Awkward Potion">
+                        <p>Potion of Weakness<br>(Standard)</p>
+                    </li>
+                </a>
+                <a  href="weakness-2.html">
+                    <li>
+                        <img src="img/Potion_of_Weakness.webp" alt="Mundane Potion">
+                        <p>Potion of Weakness II</p>
+                    </li>
+                </a>
+                
+                
+                
+                <!-- Add more potion boxes as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+</body>
+</html>
+
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+    
+    </div>
+    
+</body>
+</html>

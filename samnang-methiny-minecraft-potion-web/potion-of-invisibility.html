@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potion of Invisibility</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>       
+        <h1>Potion of Invisibility</h1>
+    </header>
+    <button id="goBackButton">Go Back</button>
+    <main>
+        <section>
+            <h2>Description</h2>
+            <p> Potion of Invisibility is a type of potion that, when consumed, makes the player or entity invisible for a limited duration. When under the effect of this potion, other players and mobs cannot see you, which can be advantageous for various in-game scenarios.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>To make Extended Potion of Invisibility, You will need:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/water-bottle.webp" alt="water bottle">
+                    <p>Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('water-bottle-mundane-details')">Read more</button>
+                    <p id="water-bottle-mundane-details" class="hidden">You will need empty glass bottles, which you can obtain by right-clicking on a water source or by using glass bottles in your crafting grid.</p>
+                </li>
+                <li>
+                    <img src="img/nether-wart.webp" alt="Nether Wart">
+                    <p>Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('netherwart-details')">Read more</button>
+                    <p id="netherwart-details" class="hidden">Nether Wart is a plant that grows in the Nether. You'll need at least one Nether Wart for the brewing process.</p>
+                </li>
+                <li>
+                    <img src="img/Golden_Carrot.webp" alt="Golden Carrot">
+                    <p>Golden Carrot</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Golden Carrot-details')">Read more</button>
+                    <p id="Golden Carrot-details" class="hidden">Golden Carrots are made by crafting a Carrot with a Gold Ingot. They are the key ingredient for making a Potion of Invisibility.</p>
+                </li>
+                <li>
+                    <img src="img/Blaze_Powder.webp" alt="blaze powder">
+                    <p>Blaze Powder</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('blaze-powder-details')">Read more</button>
+                    <p id="blaze-powder-details" class="hidden">Blaze Powder is used as fuel for the Brewing Stand.</p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="redstone dust">
+                    <p>Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('redstone-dust-details')">Read more</button>
+                    <p id="redstone-dust-details" class="hidden"> This is used to extend the duration of your potion.</p>
+                </li>
+                <li>
+                    <img src="img/access-brew-stand.webp" alt="Brewing Stand">
+                    <p>Brewing Stand</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('brew-stand-details')">Read more</button>
+                    <p id="brew-stand-details" class="hidden"> You'll need a Brewing Stand to create and modify potions.</p>
+                </li>
+            </ul>
+            
+            <h2>Steps</h2>
+            <p>Follow the Following Steps to Make Extended Potion of Invisibility:</p>
+            <ul class="PotionIngridient-list">
+                <li>
+                    <img src="img/create-water-bottle.png" alt="Prepare Water Bottle">
+                    <p>Prepare Water Bottle</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('prepare-water-bottle-details')">Read more</button>
+                    <p id="prepare-water-bottle-details" class="hidden">Place the Water Bottles in the Brewing Stand and add Blaze Powder as fuel. This will create three awkward potions.</p>
+                </li>
+                <li>
+                    <img src="img/awkward-potion.png" alt="Awkward Potion">
+                    <p>Add Awkward Potion</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('Awkward-Potion-details')">Read more</button>
+                    <p id="Awkward-Potion-details" class="hidden"> An Awkward Potion is a base potion in Minecraft.</p>
+                </li>
+                <li>
+                    <img src="img/nether-wart.webp" alt="add Nether Wart">
+                    <p>Add Nether Wart</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('add-netherwart-details')">Read more</button>
+                    <p id="add-netherwart-details" class="hidden">Place Nether Wart in the Brewing Stand's ingredient slot to convert the Water Bottles into Potion of Awkward Invisibility.</p>
+                </li>
+                <li>
+                    <img src="img/Golden_Carrot.webp" alt="add Golden Carrot">
+                    <p>Add Golden Carrot</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('add-Golden-Carrot-details')">Read more</button>
+                    <p id="add-Golden-Carrot-details" class="hidden"> Add the Golden Carrot to the Brewing Stand to create the Potion of Invisibility.</p>
+                </li>
+                <li>
+                    <img src="img/redstone-dust.png" alt="add redstone dust">
+                    <p>Add Redstone Dust</p>
+                    <button class="minecraft-button" onclick="toggleReadMore('add-modification-details')">Read more</button>
+                    <p id="add-modification-details" class="hidden">Add Redstone Dust to the Brewing Stand to extend the duration of the potion, turning it into an Extended Potion of Invisibility.</p>
+                </li>
+                <!-- Add more potion boxes as needed -->
+            </ul>
+            
+        </section>
+    </main>
+     
+    <footer>
+        <p>&copy; 2023 MinecraftPotionGuide.com</p>
+    </footer>
+    <!--for goback button-->
+    <script>
+        document.getElementById('goBackButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <script>
+        const potionDetails = document.querySelector('.potion-details');
+        const toggleButton = document.querySelector('.toggle-button');
+    
+        toggleButton.addEventListener('click', () => {
+            potionDetails.classList.toggle('show');
+        });
+    </script>
+
+       <style>
+        .hidden {
+            display: none;
+        }
+
+        .minecraft-button {
+            background-color: #9c9c9c;
+            border: 1px solid #000;
+            color: #fff;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap">
+    <script>
+        function toggleReadMore(elementId) {
+            var x = document.getElementById(elementId);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
